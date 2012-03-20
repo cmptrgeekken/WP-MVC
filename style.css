@@ -1,0 +1,224 @@
+/*
+Theme Name: Emily's Blog
+Theme URI:
+Author: Ken Beck
+Author URI: http://geekken.net/
+Description:
+*/
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #000;
+    color: #AAA;
+    font-family: 'Reenie Beanie';
+    letter-spacing: -0.05em;
+    word-spacing: -0.02em;
+    line-height: 1.24;
+}
+
+a {
+    text-decoration: none;
+    color: #CCC;
+}
+
+a:hover {color: #FFF;}
+
+.clear { clear: both; }
+
+#main-wrapper {
+    min-width: 980px;
+    margin: 0 auto;
+
+}
+
+#page-content {
+    position: relative;
+}
+
+#site-nav{
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0em;
+    word-spacing: 0em;
+    line-height: 1.4;
+    width: 100%;
+    background-color: #000;
+    padding-top: 0.5em;
+    z-index: 100;
+}
+
+#site-logo {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 0.8;
+    text-align: left;
+    width: 235px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+
+}
+
+#site-logo a {
+    width: 230px;
+    text-align: center;
+}
+
+.site-link {
+    font-size: 32px;
+    line-height: 2em
+}
+
+.slideshow {
+    position: relative;
+}
+
+.slideshow .album-thumb {
+    display: none;
+}
+
+.slideshow .album-thumb.active {
+    display: block;
+}
+
+.slideshow img, .slideshow .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.slideshow img {
+    height: 100%;
+}
+
+.galleries-wrapper {
+    margin: 0 4em;
+}
+
+.gallery-categories {
+    text-align: left;
+}
+
+.gallery-categories li {
+    display: inline;
+}
+
+.gallery-category, .gallery-category-all {
+    font-size: 32px;
+    list-style-type: none;
+    cursor: pointer;
+    margin-right: 2em;
+}
+
+.gallery-category a {
+    padding: 0 0.25em;
+}
+
+.gallery-category.active a {
+    text-decoration: underline;
+    border-bottom: 0;
+}
+
+
+.gallery-category.active .gallery-subcategories {
+    display: inline;
+
+}
+
+.gallery-category.active .gallery-subcategories a {
+    text-decoration: none;
+}
+
+.gallery-category.active .gallery-subcategory.active a {
+    text-decoration: underline;
+}
+
+.gallery-subcategories {
+    display: none;
+    float: left;
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 0.25em 0;
+    font-size: 26px;
+}
+
+.gallery-subcategories li {
+    padding: 0.25em 0;
+}
+
+.gallery-subcategories li.active {
+
+}
+
+.gallery-thumbs {
+    position: relative;
+}
+
+.gallery-thumb {
+    position: relative;
+    float: left;
+    margin: 1em;
+}
+
+.gallery-thumb, .gallery-thumb a {
+    width: 225px;
+    height: 225px;
+    display: block;
+}
+
+.gallery-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.85;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+}
+
+#album-thumbs, #album-thumbs-wrapper {
+    width: 320px;
+    float: left;
+}
+
+#album-thumbs-wrapper.hidden .album-thumb {
+    width: 0px;
+}
+
+#album-thumbs .album-thumb {
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+    float: left;
+    cursor: pointer;
+    border: 1px solid #CCC;
+}
+
+#hide-album-thumbs {
+    cursor: pointer;
+    width: 3px;
+}
+
+#album-image {
+    /*position: fixed;*/
+    margin-left: 5px;
+    left: 400px;
+    top: 100px;
+    border: 1px solid #CCC;
+    background-color: #CCC;
+    background-repeat: no-repeat;
+    background-position: top left;
+    display: none;
+    float: left;
+
+}
+
+#album-image.loading {
+    background: url('assets/images/ajax-loader.gif') no-repeat center center;
+}
